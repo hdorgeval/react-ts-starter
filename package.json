@@ -1,0 +1,32 @@
+{
+  "name": "react-ts-starter",
+  "version": "0.1.0",
+  "description": "React starter project with TypeScript and WebPack",
+  "main": "index.js",
+  "scripts": {
+    "tsc-init": "tsc --init",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "Henri d'Orgeval",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.8.1",
+    "react-dom": "16.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "10.12.24",
+    "@types/react": "16.8.2",
+    "@types/react-dom": "16.8.0",
+    "@types/webpack": "4.4.24",
+    "@types/webpack-dev-server": "3.1.2",
+    "ts-loader": "5.3.3",
+    "ts-node": "8.0.2",
+    "typescript": "3.3.3",
+    "webpack": "4.29.3",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.1.14"
+  }
+}
