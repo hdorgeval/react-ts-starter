@@ -1,23 +1,18 @@
 import {Configuration} from 'webpack';
 import {join} from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+const projectDirectory = join(__dirname, '..');
 
 const config: Configuration = {
-    mode: 'development',
-    devtool: 'source-map',
     entry: {
-        app: './src/app/index.tsx'
+        app: join(projectDirectory,'src/app/index.tsx')
     },
     output: {
-        path: join(__dirname,'dist'),
+        path: join(projectDirectory,'dist'),
         filename: 'app.bundle.js'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
-    },
-    devServer: {
-        contentBase: './dist',
-        open: true,
     },
     module: {
         rules: [
@@ -30,7 +25,7 @@ const config: Configuration = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/app/index.html',
+            template: join(projectDirectory,'src/app/index.html'),
             inject: 'body',
         } )
     ]
