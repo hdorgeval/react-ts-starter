@@ -8,7 +8,7 @@ const config: Configuration = merge(webpackCommonConfig,{
     devServer: {
         contentBase: './dist',
         open: true,
-        port: 8020
+        port: 8020,
     },
 });
 
