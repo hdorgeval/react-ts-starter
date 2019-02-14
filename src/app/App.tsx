@@ -21,6 +21,9 @@ export class App extends React.Component<AppProps, AppState> {
                 <h2>Count: {this.state.count}</h2>
                 <button onClick={this.onAddButtonClick}>+</button>
                 <button onClick={this.onDecrementButtonClick}>-</button>
+                <p>
+                    <input type="text" placeholder="Enter informations"/>
+                </p>
             </div>
         )
     }
