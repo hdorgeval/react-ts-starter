@@ -11,7 +11,11 @@ const config: Configuration = merge(webpackCommonConfig,{
             openAnalyzer: false,
             reportFilename: 'bundle-analyzer-report.html'
         }),
-    ]
+    ],
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM'
+    }
 });
 
 export default config;
