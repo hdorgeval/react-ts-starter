@@ -32,6 +32,8 @@ const config: Configuration = {
         new HtmlWebpackPlugin({
             template: join(projectDirectory,'src/app/index.html'),
             inject: 'body',
+            react: `react@${process.env.npm_package_dependencies_react}`,
+            reactDOM: `react-dom@${process.env.npm_package_dependencies_react_dom}`
         } )
     ]
 }
