@@ -1,4 +1,5 @@
 import * as React from 'react';
+const Warning = React.lazy(()=> import('./Warning'));
 
 export interface AppState {
     count: number;
@@ -21,6 +22,11 @@ export class App extends React.Component<AppProps, AppState> {
                 <h2>Count: {this.state.count}</h2>
                 <button onClick={this.onAddButtonClick}>+</button>
                 <button onClick={this.onDecrementButtonClick}>-</button>
+                {this.state.count > 10 ? 
+                    <React.Suspense fallback={<div>Loading...</div>}>
+                        <Warning />
+                    </React.Suspense>
+                    : null}
             </div>
         )
     }

@@ -5,11 +5,11 @@ const projectDirectory = join(__dirname, '..');
 
 const config: Configuration = {
     entry: {
-        app: join(projectDirectory,'src/app/index.tsx')
+        app: join(projectDirectory,'src/app/index.tsx'),
     },
     output: {
         path: join(projectDirectory,'dist'),
-        filename: 'app.bundle.js'
+        filename: '[name].bundle.js'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
