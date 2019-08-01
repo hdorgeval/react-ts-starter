@@ -1,9 +1,6 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { App } from './App';
-import './index.css';
+import React from 'react';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-   <App/>,
-    document.getElementById('app')
-)
+declare const document: HTMLDocument;
+render(<App name="react" />, document.getElementById('app'));
