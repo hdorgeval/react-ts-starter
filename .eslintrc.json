@@ -11,7 +11,10 @@
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -44,14 +47,15 @@
       }
     ],
     "semi": ["error", "always"],
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": false,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-      }
+    "import/order": ["error", {
+      "groups": ["index", "sibling", "parent", "internal", "external", "builtin"]
+    }]
+  },
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".ts",
+      ".tsx"
     ]
   }
 }
