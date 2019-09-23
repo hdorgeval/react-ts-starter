@@ -5,7 +5,7 @@
     "eslint.alwaysShowStatus": true,
     "eslint.autoFixOnSave": true,
     "eslint.options": {
-        "extensions": [".js", ".ts", ".tsx"]
+        "extensions": [".js", ".ts", ".tsx", ".css", ".scss"]
     },
     "eslint.validate": [
         "javascript",
@@ -19,7 +19,6 @@
             "autoFix": true
         }
     ],
-    "prettier.eslintIntegration": true,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "all",
     "prettier.requireConfig": true,

@@ -49,13 +49,18 @@
     "semi": ["error", "always"],
     "import/order": ["error", {
       "groups": ["index", "sibling", "parent", "internal", "external", "builtin"]
-    }]
+    }],
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
   "settings": {
     "import/extensions": [
       ".js",
       ".ts",
-      ".tsx"
+      ".tsx",
+      ".css",
+      ".scss"
     ]
   }
 }
