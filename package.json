@@ -21,8 +21,8 @@
   "author": "Henri d'Orgeval",
   "license": "MIT",
   "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "3.2.1",
